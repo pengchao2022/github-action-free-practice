@@ -2,6 +2,7 @@ name: cowsay and system info
 on: workflow_dispatch
 jobs:
   show-sth:
+    needs: check-system-info
     runs-on: ubuntu-latest
     steps:
       - name: "Update the ubuntu "
