@@ -1,5 +1,5 @@
 name: show cowsay
-on: push
+on: workflow_dispatch
 jobs:
   show-cowsay:
     runs-on: ubuntu-latest
