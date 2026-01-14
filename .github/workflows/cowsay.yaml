@@ -6,7 +6,7 @@ jobs:
     steps:
       - name:
         run: |
-          apt install cowsay
+          sudo apt install cowsay
           cowsay hello kitty
 
           
