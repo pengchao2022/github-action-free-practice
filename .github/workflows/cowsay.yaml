@@ -1,0 +1,13 @@
+name: show cowsay
+on: push
+jobs:
+  show-cowsay:
+    runs-on: ubuntu-latest
+    steps:
+      - name:
+        run: |
+          apt install cowsay
+          cowsay hello kitty
+
+          
+  
