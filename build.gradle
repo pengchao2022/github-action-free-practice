@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // 这里可以添加依赖，例如：
+    // implementation 'com.google.guava:guava:32.1.3-jre'
+    
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+}
+
+application {
+    mainClass = 'Hello'  // 如果你的类在默认包
+    // 如果类在包里：mainClass = 'com.example.Hello'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task showProjectInfo {
+    doLast {
+        println "📋 Project Information:"
+        println "  Name: ${project.name}"
+        println "  Version: ${project.version}"
+        println "  Java Version: ${JavaVersion.current()}"
+        println "  Source directories: ${sourceSets.main.java.srcDirs}"
+    }
+}
