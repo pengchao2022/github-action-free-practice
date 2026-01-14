@@ -7,7 +7,7 @@ jobs:
       - name: install cowsay and show sth
         run: |
           sudo apt install cowsay
-          cowsay hello kitty, I love you!
+          cowsay "hello kitty, I love you!"
 
           
   
