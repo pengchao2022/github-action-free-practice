@@ -4,7 +4,7 @@ jobs:
   show-cowsay:
     runs-on: ubuntu-latest
     steps:
-      - name:
+      - name: install cowsay and show sth
         run: |
           sudo apt install cowsay
           cowsay hello kitty, I love you!
