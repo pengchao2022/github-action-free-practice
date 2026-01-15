@@ -3,7 +3,9 @@ FROM openjdk:17-ea-alpine
 WORKDIR /app
 
 # copy JAR file
-COPY build/libs/*.jar app.jar
+COPY . .
+
+RUN find . -name "*.jar" -exec mv {} app.jar \; 2>/dev/null
 
 # run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
