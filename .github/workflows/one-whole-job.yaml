@@ -32,6 +32,15 @@ jobs:
       - name: Confirm toilet
         run: toilet "Hello World 2026"
 
+      - name: Display github logo
+        run: |
+          echo "   _____ _ _   _    _                         _ "
+          echo "  / ____(_) | | |  | |                       | |"
+          echo " | |  __ _| |_| |__| | ___  _ __   ___  _ __ | |"
+          echo " | | |_ | | __|  __  |/ _ \| '_ \ / _ \| '_ \| |"
+          echo " | |__| | | |_| |  | | (_) | | | | (_) | | | |_|"
+          echo "  \_____|_|\__|_|  |_|\___/|_| |_|\___/|_| |_(_)"
+
         
 
 
