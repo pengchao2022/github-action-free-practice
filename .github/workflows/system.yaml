@@ -26,6 +26,19 @@ jobs:
       - name: confirm cowsay
         run: cowsay "Hello, My name is cowsay"
 
+  display-art:
+    runs-on: ubuntu-latest
+    needs: check-ubuntu-system
+    steps:
+      - name: display ASCII art
+        run: |
+          echo "    /\_/\    "
+          echo "   ( o.o )   "
+          echo "    > ^ <    "
+          echo "   Cat says hello!"
+          echo -e "\n"
+
+
         
 
         
