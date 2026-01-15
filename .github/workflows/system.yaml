@@ -23,6 +23,10 @@ jobs:
         run: sudo apt update
       - name: Install sl to show train
         run: sudo apt install sl
+      - name: confirm sl
+        run: sl
+
+        
 
         
     
