@@ -45,7 +45,17 @@ jobs:
       - name: install figlet
         run: sudo apt install figlet
       - name: confirm figlet
-        run: figlet SUCCESS
+        run: figlet "SUCCESS"
+
+  install-toilet:
+    runs-on: ubuntu-latest
+    needs: install-figlet
+    steps:
+      - name: install toilet
+        run: sudo apt install toilet
+      - name: confirm toilet
+        run: toilet "Build Passed"
+     
 
         
         
