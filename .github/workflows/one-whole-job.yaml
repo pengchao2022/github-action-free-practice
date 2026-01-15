@@ -1,0 +1,15 @@
+name: one whole job
+on: workflow_dispatch
+jobs:
+  one-whole-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update the ubuntu system
+        run: sudo apt update
+      - name: Check the memory
+        run: free -h
+      - name: Check the disk
+        run: df -TH
+
+
+
