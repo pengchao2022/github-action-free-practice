@@ -5,7 +5,7 @@ public class Hello {
         System.out.println("My name is Pengchao Ma");
         System.out.println("I am from Shanghai China");
         System.out.println("I am a software engineer");
-        system.out.println("This repo is for demoing github action github ci practice");
+        System.out.println("This repo is for demoing github action github ci practice");
         System.out.println("Current time: " + java.time.LocalDateTime.now());
 
     }
