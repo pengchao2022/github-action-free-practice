@@ -35,6 +35,21 @@ jobs:
           distribution: 'temurin'
           cache: 'gradle'
 
+      - name: Debug - Show Project structure
+        run: |
+          echo "Project Directory Structure:"
+          pwd
+          ls -la
+          echo ""
+          echo "JAVA file:"
+          find . -name "*.java" -type f
+          echo ""
+          echo "src directory"
+          ls -laR src/ || echo "can't find src"
+          echo ""
+          echo "Gradle privileges"
+          ls -la ./gradlew || echo "can't find gradlew"
+
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
