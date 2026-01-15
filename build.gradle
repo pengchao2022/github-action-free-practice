@@ -11,7 +11,11 @@ repositories {
     mavenCentral()
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+// 这个配置确保 JAR 文件包含正确的 MANIFEST.MF
+jar {
+    manifest {
+        attributes(
+            'Main-Class': application.mainClass
+        )
+    }
 }
