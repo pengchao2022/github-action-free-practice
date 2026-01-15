@@ -1,16 +1,17 @@
 plugins {
     id 'java'
-    id 'application'  // 添加 application 插件
+    id 'application'
 }
 
-// 指定主类（根据你的实际类名修改）
 application {
-    mainClass = 'Hello'  // 如果类在默认包
-    // 或者 mainClass = 'com.example.Hello'  // 如果在包里
+    mainClass = 'Hello'
 }
 
-jar {
-    manifest {
-        attributes 'Main-Class': application.mainClass
-    }
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }

@@ -1,0 +1,99 @@
+# Gradle
+.gradle/
+build/
+out/
+.gradle
+!gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.settings/
+.project
+.classpath
+bin/
+
+# NetBeans
+nbproject/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# Log files
+*.log
+logs/
+
+# Build output
+target/
+dist/
+out/
+release/
+
+# Dependency directories
+lib/
+libs/
+
+# Gradle cache
+.gradle/caches/
+
+# Generated files
+.generated/
+generated/
+
+# Local configuration
+local.properties
+
+# System files
+Thumbs.db
+
+# Gradle wrapper (we keep this)
+# !gradle/wrapper/gradle-wrapper.jar
+# !gradlew
+# !gradlew.bat
+
+# Ignore all but keep the wrapper
+gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
+
+# Application specific
+application.yml
+application.properties
+
+# Temporary files
+tmp/
+temp/
+
+# Test coverage
+coverage/
+*.coverage
+*.lcov
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
