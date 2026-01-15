@@ -27,6 +27,11 @@ jobs:
       - name: Confirm figlet
         run: figlet "Hello World 2026"
 
+      - name: Install toilet
+        run: sudo apt install toilet
+      - name: Confirm toilet
+        run: toilet "Hello World 2026"
+
         
 
 
