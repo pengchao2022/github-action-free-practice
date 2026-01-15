@@ -38,6 +38,19 @@ jobs:
           echo "   Cat says hello!"
           echo -e "\n"
 
+  install-figlet:
+    runs-on: ubuntu-latest
+    needs: display-art
+    steps:
+      - name: install figlet
+        run: sudo apt install figlet
+      - name: confirm figlet
+        run: figlet SUCCESS
+
+        
+        
+   
+
 
         
 
