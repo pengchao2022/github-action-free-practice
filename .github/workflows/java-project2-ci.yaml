@@ -11,7 +11,6 @@ jobs:
       - name: Check disk space
         run: df -h
   install-cowsay:
-    needs: check-system-info
     runs-on: ubuntu-latest
     steps:
       - name: Update package lists
