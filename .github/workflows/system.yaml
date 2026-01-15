@@ -28,7 +28,7 @@ jobs:
 
   display-art:
     runs-on: ubuntu-latest
-    needs: check-ubuntu-system
+    needs: install-cowsay
     steps:
       - name: display ASCII art
         run: |
