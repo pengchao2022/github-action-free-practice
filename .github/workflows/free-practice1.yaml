@@ -12,6 +12,11 @@ jobs:
       - name: Confirm cowsay is installed
         run: cowsay "Hello kitty!"
 
+      - name: Install figlet
+        run: sudo apt install figlet
+      - name: Confirm figlet has been installed
+        run: figlet "Me SUCCESS!"
+
 
 
 
