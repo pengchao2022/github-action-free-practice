@@ -17,6 +17,11 @@ jobs:
       - name: Confirm figlet has been installed
         run: figlet "Me SUCCESS!"
 
+      - name: Install toilet
+        run: sudo apt install toilet
+      - name: Confirm toilet is installed
+        run: toilet "BUILD PASSWD"
+
 
 
 
