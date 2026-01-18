@@ -7,6 +7,20 @@ jobs:
       - name: check-system-info
         run: sudo apt update
 
+      - name: Install cowsay
+        run: sudo apt install cowsay
+      - name: Confirm cowsay is installed
+        run: cowsay "Hello kitty!"
+
+
+
+
+
+
+
+
+
+
 
 
 
