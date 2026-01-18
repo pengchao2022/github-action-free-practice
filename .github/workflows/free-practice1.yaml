@@ -1,0 +1,13 @@
+name: free practice 1
+on: workflow_dispatch
+jobs:
+  check-system-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check-system-info
+        run: sudo apt update
+
+
+
+
+
