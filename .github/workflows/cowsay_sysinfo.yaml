@@ -1,5 +1,9 @@
 name: cowsay and system info
-on: workflow_dispatch
+on:
+  push:
+    branches: 
+      - feature/GTP-54273-flutter-build
+# on: workflow_dispatch
 jobs:
   show-sth:
     needs: check-system-info
