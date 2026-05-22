@@ -9,7 +9,7 @@ jobs:
     needs: check-system-info
     runs-on: ubuntu-latest
     steps:
-      - name: "Update the ubuntu "
+      - name: "Update the ubuntu runner"
         run: sudo apt update
       - name: "Install cowsay on ubuntu"
         run: |
