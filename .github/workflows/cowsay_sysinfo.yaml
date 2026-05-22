@@ -6,7 +6,7 @@ on:
 # on: workflow_dispatch
 jobs:
 
-   check-system-info:
+  check-system-info:
     runs-on: ubuntu-latest
     steps:
       - name: "Check the ubuntu memory"
@@ -14,19 +14,19 @@ jobs:
       - name: "Check the ubuntu disk space"
         run: df -TH
          
-    show-sth:
-      needs: check-system-info
-      runs-on: ubuntu-latest
-      steps:
-        - name: "Update the ubuntu runner"
-          run: sudo apt update
-        - name: "Install cowsay on ubuntu"
-          run: |
-            sudo apt install cowsay
-            echo "*****************************"
-            echo "Successfully installed cowsay!"
-        - name: "cowsay show sth"
-          run: cowsay "Hello Winslate, you are amazing !!"
+  show-sth:
+    needs: check-system-info
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Update the ubuntu runner"
+        run: sudo apt update
+      - name: "Install cowsay on ubuntu"
+        run: |
+          sudo apt install cowsay
+          echo "*****************************"
+          echo "Successfully installed cowsay!"
+      - name: "cowsay show sth"
+        run: cowsay "Hello Winslate, you are amazing !!"
 
   
 
