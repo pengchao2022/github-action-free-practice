@@ -1,11 +1,24 @@
 name: cowsay and system info
-on: workflow_dispatch
+on:
+  push:
+    branches: 
+      - feature/GTP-54273-flutter-build
+# on: workflow_dispatch
 jobs:
+
+  check-system-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check the ubuntu memory"
+        run: free -h
+      - name: "Check the ubuntu disk space"
+        run: df -TH
+         
   show-sth:
     needs: check-system-info
     runs-on: ubuntu-latest
     steps:
-      - name: "Update the ubuntu "
+      - name: "Update the ubuntu runner"
         run: sudo apt update
       - name: "Install cowsay on ubuntu"
         run: |
@@ -15,12 +28,6 @@ jobs:
       - name: "cowsay show sth"
         run: cowsay "Hello Winslate, you are amazing !!"
 
-  check-system-info:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Check the ubuntu memory"
-        run: free -h
-      - name: "Check the ubuntu disk space"
-        run: df -TH
+  
 
         
